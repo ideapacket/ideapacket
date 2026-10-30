@@ -25,8 +25,6 @@
 
 </div>
 
-521 次提交（2025.01 — 2026.10）· 43 个源码模块 · 4 个可运行离线示例 · 每次提交都经过构建、测试与格式检查。所有测量数字来自带植入真值的确定性合成场景：无真实语音语料、无预训练权重、无在线服务端点，全离线可复现。
-
 ## 技术栈
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square&logo=python&logoColor=white)
