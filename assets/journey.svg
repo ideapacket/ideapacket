@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-label="voxwright journey: from session core to verified voice-agent applications">
+  <defs>
+    <linearGradient id="jbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10141c"/>
+      <stop offset="1" stop-color="#161d2b"/>
+    </linearGradient>
+    <style>
+      .t   { font: 700 20px 'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; fill:#f2f5f9; }
+      .tr  { font: 500 13px 'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; fill:#8b96ab; }
+      .st  { font: 600 12.5px 'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; fill:#d8dfea; text-anchor:middle; }
+      .sd  { font: 500 10.5px 'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; fill:#77839b; text-anchor:middle; }
+      .pill{ font: 700 12.5px 'SF Mono',Consolas,monospace; }
+      .conn { fill:none; stroke:#2b3648; stroke-width:2; stroke-dasharray:5 7; animation: dash 1.8s linear infinite; }
+      @keyframes dash { to { stroke-dashoffset:-24; } }
+      .node { opacity:0; animation: pop 0.45s ease-out forwards; transform-box: fill-box; transform-origin: center; }
+      @keyframes pop { from { opacity:0; transform: scale(0.4);} to { opacity:1; transform: scale(1);} }
+      .lbl  { opacity:0; animation: fadein 0.5s ease-out forwards; }
+      @keyframes fadein { to { opacity:1; } }
+    </style>
+  </defs>
+  <rect width="900" height="340" rx="14" fill="url(#jbg)"/>
+
+  <text class="t" x="40" y="44">voxwright · 一个仓库的两年旅程</text>
+  <text class="tr" x="40" y="66">语音智能体应用层 — 从确定性会话核心到可验证的工具编排与评测</text>
+  <text class="tr" x="860" y="44" text-anchor="end" style="fill:#a78bfa">2025.01 — 2026.10</text>
+  <text class="tr" x="860" y="66" text-anchor="end">521 commits · 330 in 2025</text>
+
+  <path class="conn" d="M95,140 H770"/>
+  <path class="conn" d="M790,140 C 830,140 830,236 790,236" style="animation-delay:-0.4s"/>
+  <path class="conn" d="M770,236 H95" style="animation-delay:-0.8s"/>
+
+  <!-- row 1 -->
+  <g>
+    <g class="node" style="animation-delay:0.2s"><circle cx="95" cy="140" r="16" fill="#1a2130" stroke="#22d3ee" stroke-width="2.5"/><path d="M88,140 h4 v-7 h4 v12 h4 v-9 h3" stroke="#22d3ee" stroke-width="2" fill="none"/></g>
+    <text class="st lbl" x="95" y="106" style="animation-delay:0.3s">会话事件核心</text>
+    <text class="sd lbl" x="95" y="180" style="animation-delay:0.3s">record · replay · diff</text>
+
+    <g class="node" style="animation-delay:0.5s"><circle cx="263" cy="140" r="16" fill="#1a2130" stroke="#a78bfa" stroke-width="2.5"/><rect x="256" y="133" width="14" height="12" rx="2" fill="none" stroke="#a78bfa" stroke-width="2"/><circle cx="263" cy="139" r="2" fill="#a78bfa"/></g>
+    <text class="st lbl" x="263" y="106" style="animation-delay:0.6s">场景工厂</text>
+    <text class="sd lbl" x="263" y="180" style="animation-delay:0.6s">植入真值 · 误听 · 对抗注入</text>
+
+    <g class="node" style="animation-delay:0.8s"><circle cx="431" cy="140" r="16" fill="#1a2130" stroke="#a3e635" stroke-width="2.5"/><path d="M424,144 l5,-9 l4,7 l3,-5 l5,7" stroke="#a3e635" stroke-width="2" fill="none"/></g>
+    <text class="st lbl" x="431" y="106" style="animation-delay:0.9s">适配器协议</text>
+    <text class="sd lbl" x="431" y="180" style="animation-delay:0.9s">scripted · replay · mock</text>
+
+    <g class="node" style="animation-delay:1.1s"><circle cx="599" cy="140" r="16" fill="#1a2130" stroke="#fbbf24" stroke-width="2.5"/><path d="M592,136 h14 M592,143 h9" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round"/><circle cx="606" cy="144" r="2.4" fill="#a3e635"/></g>
+    <text class="st lbl" x="599" y="106" style="animation-delay:1.2s">函数调用语法</text>
+    <text class="sd lbl" x="599" y="180" style="animation-delay:1.2s">类型校验 · 防注入</text>
+
+    <g class="node" style="animation-delay:1.4s"><circle cx="770" cy="140" r="16" fill="#1a2130" stroke="#22d3ee" stroke-width="2.5"/><rect x="763" y="133" width="14" height="13" rx="2" fill="none" stroke="#22d3ee" stroke-width="2"/><path d="M766,139 h8" stroke="#22d3ee" stroke-width="2"/></g>
+    <text class="st lbl" x="770" y="106" style="animation-delay:1.5s">槽位接地</text>
+    <text class="sd lbl" x="770" y="180" style="animation-delay:1.5s">frame 状态 · 确认策略</text>
+  </g>
+
+  <!-- row 2 -->
+  <g>
+    <g class="node" style="animation-delay:1.7s"><circle cx="686" cy="236" r="16" fill="#1a2130" stroke="#a78bfa" stroke-width="2.5"/><circle cx="681" cy="232" r="2.6" fill="#a78bfa"/><circle cx="691" cy="232" r="2.6" fill="#a78bfa"/><circle cx="686" cy="242" r="2.6" fill="#a78bfa"/><path d="M681,232 L691,232 M681,232 L686,242 M691,232 L686,242" stroke="#a78bfa" stroke-width="1.4"/></g>
+    <text class="st lbl" x="686" y="278" style="animation-delay:1.8s">工作流引擎</text>
+    <text class="sd lbl" x="686" y="206" style="animation-delay:1.8s">补偿 · 字节一致 resume</text>
+
+    <g class="node" style="animation-delay:2.0s"><circle cx="518" cy="236" r="16" fill="#1a2130" stroke="#fbbf24" stroke-width="2.5"/><path d="M511,232 l7,-3 l7,3 v6 c0,5 -3,8 -7,10 c-4,-2 -7,-5 -7,-10 Z" fill="none" stroke="#fbbf24" stroke-width="2"/></g>
+    <text class="st lbl" x="518" y="278" style="animation-delay:2.1s">权限工具沙箱</text>
+    <text class="sd lbl" x="518" y="206" style="animation-delay:2.1s">deny 永不执行 · 副作用账本</text>
+
+    <g class="node" style="animation-delay:2.3s"><circle cx="350" cy="236" r="16" fill="#1a2130" stroke="#a3e635" stroke-width="2.5"/><path d="M343,236 a7,7 0 1 1 14,0 a7,7 0 1 1 -14,0 M344,231 l-3,-3 M356,231 l3,-3" stroke="#a3e635" stroke-width="1.8" fill="none"/></g>
+    <text class="st lbl" x="350" y="278" style="animation-delay:2.4s">修复 · barge-in</text>
+    <text class="sd lbl" x="350" y="206" style="animation-delay:2.4s">有界修复 · 原子回滚</text>
+
+    <g class="node" style="animation-delay:2.6s"><circle cx="182" cy="236" r="16" fill="#1a2130" stroke="#22d3ee" stroke-width="2.5"/><path d="M175,241 l5,-9 l4,6 l6,-8" stroke="#22d3ee" stroke-width="2" fill="none"/></g>
+    <text class="st lbl" x="182" y="278" style="animation-delay:2.7s">评测与报告</text>
+    <text class="sd lbl" x="182" y="206" style="animation-delay:2.7s">任务成功率 · 延迟分账 · HTML</text>
+  </g>
+
+  <g class="lbl" style="animation-delay:3.0s">
+    <rect x="40" y="300" width="118" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="99" y="317" fill="#a78bfa" text-anchor="middle">521 commits</text>
+    <rect x="170" y="300" width="112" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="226" y="317" fill="#22d3ee" text-anchor="middle">1082 tests</text>
+    <rect x="294" y="300" width="118" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="353" y="317" fill="#a3e635" text-anchor="middle">43 modules</text>
+    <rect x="424" y="300" width="118" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="483" y="317" fill="#fbbf24" text-anchor="middle">4 examples</text>
+    <rect x="554" y="300" width="86" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="597" y="317" fill="#d8dfea" text-anchor="middle">v0.1.2</text>
+    <rect x="652" y="300" width="208" height="26" rx="13" fill="#1a2130" stroke="#2b3648"/><text class="pill" x="756" y="317" fill="#7ee081" text-anchor="middle">逐提交 build·test·format ✓</text>
+  </g>
+</svg>
